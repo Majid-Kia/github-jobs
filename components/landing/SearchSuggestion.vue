@@ -27,11 +27,14 @@ export default {
   background-color: var(--whiteBg);
 }
 li {
-  padding: 7px 10px;
+  padding: 10px ;
   border-bottom: 1px solid rgba(204, 204, 204, 0.4);
   cursor: pointer;
+  color: var(--blackText);
+    font-size:12px ;
+
 }
 li:hover {
-  background: #ccc;
+  background: var(--grayLightBg);
 }
 </style>

@@ -205,6 +205,7 @@ export default {
   padding-left: 40px;
   padding-right: 10px;
   border: none;
+  color: var(--blackText);
 }
 .form-control i {
   position: absolute;

@@ -9,7 +9,7 @@ export default {
     JobDetail,
   },
   async asyncData({ params, $axios }) {
-    const job = await $axios.$get(`https://jobs.github.com/positions/${params.id}.json`);
+    const job = await $axios.$get(`https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions/${params.id}.json`);
     return { job };
   }
 };

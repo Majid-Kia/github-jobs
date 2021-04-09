@@ -31,7 +31,6 @@ export default {
     HowToApply,
     ApplyBar
   },
-  methods: {}
 };
 </script>
 
