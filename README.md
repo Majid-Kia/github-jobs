@@ -1,20 +1,3 @@
-# githubJobs
+# demo URL : https://nuxt-github-jobs.herokuapp.com/
 
-## Build Setup
-
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+I did this test in one day, I hope this is enough. If I had more time I could do it better and do all the reward lists.
