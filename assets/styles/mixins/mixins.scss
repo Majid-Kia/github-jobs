@@ -1,0 +1,103 @@
+@mixin for-size($size) {
+  @if $size == phone {
+    @media (max-width: 800px) {
+      @content;
+    }
+  } @else if $size == not-phone {
+    @media (min-width:800px) {
+      @content;
+    }
+  } @else if $size == tablet-only {
+    @media (min-width: 800px) and (max-width: 1439px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (max-width: 1439px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+// flex center vertical
+@mixin flex-center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+// flex center horzontal
+@mixin flex-center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+// flex center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// placehoder
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// truncate
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// css triangle
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+  width: 0;
+  height: 0;
+  @if ($direction == left) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  } @else if ($direction == right) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  } @else if ($direction == down) {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  } @else {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  }
+}
+
+// functions
+@function ratio($value) {
+  $result: ($value * $ratio) + px;
+  @return $result;
+}
+
+@function fz($value) {
+  $result: ($value / $fz) + rem;
+  @return $result;
+}

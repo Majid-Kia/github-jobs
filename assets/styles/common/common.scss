@@ -1,0 +1,41 @@
+.w-100 {
+  width: 100%;
+}
+
+// hidden classes
+.hide {
+  display: none !important;
+}
+
+.hide-in-phone {
+  @include for-size(phone) {
+    display: none !important;
+  }
+}
+
+.hide-in-tablet {
+  @include for-size(tablet-only) {
+    display: none !important;
+  }
+}
+
+.hide-in-not-phone {
+  @include for-size(not-phone) {
+    display: none !important;
+  }
+}
+
+.main-body{
+  width: 1112px;
+  margin: 0 auto;
+  @media (min-width: 800px) and (max-width: 1439px) {
+    width: 100%;
+    padding: 0 50px;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 16px;
+
+
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+  --midnight: #121721;
+  --Blue: #19212e;
+  --white: #ffffff;
+  --violet: #606ad7;
+  --violetLight: #959df4;
+  --grayLight: #f3f5f7;
+  --gray: #6d7f97;
+
+  //theme colors
+  --whiteText: #ffffff;
+  --blackText: #121721;
+  --grayLightBg: #f3f5f7;
+  --whiteBg: #ffffff;
+}
+
+// - Midnight (Dark Mode background): hsl(220, 29%, 10%)
+// - Blue (Dark Mode Elements Background & Light Mode ): hsl(219, 29%, 14%);
+// - White (Dark Mode Text & Light Mode Elements Background): hsl(0, 0%, 100%)
+// - Violet (Dark mode & Light Mode): hsl(235, 60%, 61%)
+// - Violet Light (Light mode Company Button): hsl(235, 82%, 77%)
+// - Gray (Light Mode background): hsl(210, 22%, 96%)
+// - Gray (Dark Mode Some Texts & Light Mode Some Texts): hsl(214, 17%, 51%)
+
+
+
+//icons
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "@/assets/fonts" !default;
+
+
+$icon-location: "\e903";
+$icon-sun: "\e900";
+$icon-moon: "\e901";
+$icon-search: "\e902";
+
